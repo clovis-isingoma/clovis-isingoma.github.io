@@ -3,80 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Clovis Isingoma - Personal Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Social Media Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
     }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.6); /* dark overlay */
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-    }
-
-    .contact-container {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      color: #fff;
-    }
-
-    .contact-container h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .social-links {
-      margin-top: 25px;
-    }
-
-    .social-links a {
-      margin: 0 12px;
-      font-size: 30px;
-      display: inline-block;
-      width: 55px;
-      height: 55px;
-      line-height: 55px;
-      border-radius: 50%;
+    header {
+      background: linear-gradient(90deg, #007bff, #0056b3);
       color: white;
-      transition: 0.3s;
+      padding: 50px 0;
     }
-
-    /* Brand Colors */
-    .whatsapp { background: #25D366; }
-    .linkedin { background: #0A66C2; }
-    .instagram { background: #E4405F; }
-    .facebook { background: #1877F2; }
-    .github { background: #333; }
-
-    /* Hover Effect */
-    .social-links a:hover {
+    header h1 {
+      font-size: 3rem;
+    }
+    .about-me {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .social-icons a {
+      font-size: 2rem;
+      margin: 0 15px;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
       transform: scale(1.2);
-      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="contact-container">
-    <h2>Let's Connect</h2>
-    <div class="social-links">
-      <a href="https://wa.me/256XXXXXXXXX" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://instagram.com/yourprofile" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/yourprofile" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://github.com/yourprofile" target="_blank" class="github"><i class="fab fa-github"></i></a>
+
+  <!-- HEADER -->
+  <header class="text-center">
+    <h1>Clovis Isingoma</h1>
+    <p>Diploma in Computer Science | Tech Enthusiast | Problem Solver</p>
+  </header>
+
+  <!-- ABOUT ME -->
+  <section class="container my-5">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p>Hello! My name is <strong>Clovis Isingoma</strong> and I am currently pursuing a Diploma in Computer Science. I am passionate about technology, software development, and solving real-world problems through innovative digital solutions.</p>
+      <p>I have experience in programming languages such as HTML, CSS, JavaScript, Python, and C++. I enjoy building responsive websites, creating applications, and exploring emerging technologies like AI and cybersecurity.</p>
+      <p>When I’m not coding, I spend my time learning new tech trends, contributing to open-source projects, and sharing knowledge with other learners.</p>
     </div>
-  </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">My Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="p-3 border rounded bg-light">HTML5 & CSS3</div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3 border rounded bg-light">JavaScript</div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3 border rounded bg-light">Python</div>
+      </div>
+      <div class="col-md-3">
+        <div class="p-3 border rounded bg-light">C++</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section class="container my-5 text-center">
+    <h2 class="mb-4">Connect with Me</h2>
+    <div class="social-icons">
+      <a href="https://wa.me/yourwhatsapplink" target="_blank" style="color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" style="color:#0A66C2;"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourtwitter" target="_blank" style="color:#1DA1F2;"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com/yourfacebook" target="_blank" style="color:#1877F2;"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/yourgithub" target="_blank" style="color:#333;"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Clovis Isingoma. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
